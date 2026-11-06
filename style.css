@@ -460,8 +460,9 @@ a.store:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 2400px;
-  height: 2400px;
+  /* Big enough to reach every corner of the hero, on any screen width. */
+  width: max(2400px, 220vw);
+  height: max(2400px, 220vw);
   max-width: none;
   transform: translate(-50%, -50%);
   z-index: -1;
