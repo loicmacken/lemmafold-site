@@ -27,7 +27,7 @@
     <meta property="og:image:height" content="500" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="style.css?v=2" />
+    <link rel="stylesheet" href="style.css?v=3" />
   </head>
   <body class="home">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -146,7 +146,7 @@
       </section>
 
       <!-- Screenshots -->
-      <section class="gallery" aria-label="Screenshots of the app">
+      <section class="gallery wrap" aria-label="Screenshots of the app">
         <ul class="gallery-track" id="gallery" tabindex="0">
           <li><img src="assets/screens/01-home.webp" width="540" height="960" loading="lazy" alt="Home screen: always know what to learn next, with your streak, words learned today and progress through the path" /></li>
           <li><img src="assets/screens/02-grammar.webp" width="540" height="960" loading="lazy" alt="A grammar lesson laid out in full, with a complete conjugation table" /></li>
@@ -428,13 +428,17 @@
         var track = document.getElementById('gallery');
         var buttons = document.querySelectorAll('.gallery-nav button');
         var update = function () {
-          var max = track.scrollWidth - track.clientWidth - 2;
-          buttons[0].disabled = track.scrollLeft <= 2;
+          var max = track.scrollWidth - track.clientWidth - 8;
+          buttons[0].disabled = track.scrollLeft <= 8;
           buttons[1].disabled = track.scrollLeft >= max;
         };
         buttons.forEach(function (b) {
           b.addEventListener('click', function () {
-            var step = track.clientWidth * 0.8 * Number(b.dataset.dir);
+            // Move by as many screenshots as fit in full: four on desktop, one on a phone.
+            var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+            var item = track.children[0].getBoundingClientRect().width + gap;
+            var perPage = Math.max(1, Math.floor((track.clientWidth + gap) / item));
+            var step = perPage * item * Number(b.dataset.dir);
             track.scrollBy({ left: step, behavior: 'smooth' });
           });
         });

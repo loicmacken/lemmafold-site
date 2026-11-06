@@ -648,38 +648,37 @@ section.band.tint {
   font-size: 0.9375rem;
 }
 
-/* Gallery */
-
-.gallery {
-  position: relative;
-}
+/* Gallery - inside the content width; four at a time on desktop, two on tablets, swipe on phones */
 
 .gallery-track {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: min(66vw, 260px);
+  grid-auto-columns: 66%;
   gap: 20px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-padding-inline: 16px;
-  padding: 8px 16px 24px;
-  margin: 0;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline: 4px;
+  padding: 8px 4px 24px;
+  margin: 0 -4px;
   list-style: none;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border-emphasis) transparent;
+  scrollbar-width: none;
+}
+
+.gallery-track::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 640px) {
   .gallery-track {
-    scroll-padding-inline: 32px;
-    padding-inline: 32px;
+    grid-auto-columns: calc((100% - 20px) / 2);
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .gallery-track {
-    padding-inline: calc((100vw - 72rem) / 2 + 32px);
-    scroll-padding-inline: calc((100vw - 72rem) / 2 + 32px);
+    grid-auto-columns: calc((100% - 3 * 24px) / 4);
+    gap: 24px;
   }
 }
 
