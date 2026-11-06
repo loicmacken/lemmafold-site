@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LemmaFold Privacy Policy</title>
     <meta name="description" content="What data LemmaFold collects, why, and your rights." />
+    <meta name="theme-color" content="#fdf9f4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a120d" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="assets/pyx.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon-48.png" sizes="48x48" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="canonical" href="https://lemmafold.com/privacy" />
+    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site">
-      <a class="brand" href="/">LemmaFold</a>
-      <nav>
-        <a href="/support">Support</a>
-        <a href="/privacy" aria-current="page">Privacy</a>
-        <a href="/delete-account">Delete account</a>
-      </nav>
+      <div class="wrap">
+        <a class="brand wordmark" href="/" aria-label="LemmaFold home">
+          <img src="assets/pyx.svg" alt="" width="32" height="32" />
+          <span>Lemma<span class="fold">Fold</span></span>
+        </a>
+        <nav aria-label="Main">
+          <a class="nav-optional" href="/#features">Features</a>
+          <a class="nav-optional" href="/#premium">Premium</a>
+          <a href="/support">Support</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main id="main" class="doc">
       <h1>Privacy Policy</h1>
       <p class="muted">Last updated 14 September 2026</p>
 
@@ -236,6 +250,42 @@
       </p>
     </main>
 
-    <footer>© LemmaFold</footer>
+    <footer class="site">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand wordmark" href="/"><img src="assets/pyx.svg" alt="" width="32" height="32" /><span>Lemma<span class="fold">Fold</span></span></a>
+            <p>The grammar other apps skip. Eight languages, fully offline, no ads.</p>
+          </div>
+          <nav aria-labelledby="f-app">
+            <h2 id="f-app">App</h2>
+            <ul>
+              <li><a href="/#features">Features</a></li>
+              <li><a href="/#languages">Languages</a></li>
+              <li><a href="/#premium">Premium</a></li>
+            </ul>
+          </nav>
+          <nav aria-labelledby="f-help">
+            <h2 id="f-help">Help</h2>
+            <ul>
+              <li><a href="/support">Support</a></li>
+              <li><a href="/delete-account">Delete your account</a></li>
+              <li><a href="mailto:support@lemmafold.com">support@lemmafold.com</a></li>
+            </ul>
+          </nav>
+          <nav aria-labelledby="f-legal">
+            <h2 id="f-legal">Legal</h2>
+            <ul>
+              <li><a href="/privacy" aria-current="page">Privacy policy</a></li>
+              <li><a href="/terms">Terms of use</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 LemmaFold · KVK 88506436 · The Netherlands</span>
+          <span>Made with paper and patience.</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

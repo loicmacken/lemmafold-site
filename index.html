@@ -3,34 +3,445 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LemmaFold</title>
-    <meta name="description" content="LemmaFold - learn languages through vocabulary, grammar and stories." />
+    <title>LemmaFold - the grammar other language apps skip</title>
+    <meta
+      name="description"
+      content="Learn Spanish, Portuguese, French, Italian, German, Dutch, Polish or Ukrainian with full grammar tables, stories built from words you know, and eight ways to practise. Fully offline, no ads."
+    />
+    <meta name="theme-color" content="#fdf9f4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a120d" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="assets/pyx.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon-48.png" sizes="48x48" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="canonical" href="https://lemmafold.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LemmaFold" />
+    <meta property="og:title" content="LemmaFold - the grammar other language apps skip" />
+    <meta
+      property="og:description"
+      content="Eight languages, full grammar, stories worth reading. Fully offline, no ads."
+    />
+    <meta property="og:url" content="https://lemmafold.com/" />
+    <meta property="og:image" content="https://lemmafold.com/assets/og-image.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="500" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site">
-      <a class="brand" href="/">LemmaFold</a>
-      <nav>
-        <a href="/support">Support</a>
-        <a href="/privacy">Privacy</a>
-        <a href="/delete-account">Delete account</a>
-      </nav>
+      <div class="wrap">
+        <a class="brand wordmark" href="/" aria-label="LemmaFold home">
+          <img src="assets/pyx.svg" alt="" width="32" height="32" />
+          <span>Lemma<span class="fold">Fold</span></span>
+        </a>
+        <nav aria-label="Main">
+          <a class="nav-optional" href="#features">Features</a>
+          <a class="nav-optional" href="#premium">Premium</a>
+          <a href="/support">Support</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h1>LemmaFold</h1>
-      <p class="muted">
-        Learn Spanish, Portuguese, Italian, French, Ukrainian, Dutch, German and Polish through
-        vocabulary, grammar and short stories. Works offline, no account needed.
-      </p>
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero-art">
+            <svg class="rays" viewBox="-1200 -1200 2400 2400" aria-hidden="true" focusable="false">
+              <style>
+                .r1 { fill: var(--ray-1); } .r2 { fill: var(--ray-2); }
+                .r3 { fill: var(--ray-3); } .r4 { fill: var(--ray-4); }
+                .rays g { stroke: var(--ray-line); stroke-width: 1.5; }
+              </style>
+              <g>
+                <polygon class="r1" points="0,0 1700,0 1626,497" />
+                <polygon class="r2" points="0,0 1626,497 1457,876" />
+                <polygon class="r3" points="0,0 1457,876 1047,1340" />
+                <polygon class="r4" points="0,0 1047,1340 691,1553" />
+                <polygon class="r1" points="0,0 691,1553 59,1699" />
+                <polygon class="r2" points="0,0 59,1699 -324,1669" />
+                <polygon class="r3" points="0,0 -324,1669 -951,1409" />
+                <polygon class="r4" points="0,0 -951,1409 -1302,1093" />
+                <polygon class="r1" points="0,0 -1302,1093 -1576,637" />
+                <polygon class="r2" points="0,0 -1576,637 -1698,89" />
+                <polygon class="r3" points="0,0 -1698,89 -1674,-295" />
+                <polygon class="r4" points="0,0 -1674,-295 -1442,-901" />
+                <polygon class="r1" points="0,0 -1442,-901 -1115,-1283" />
+                <polygon class="r2" points="0,0 -1115,-1283 -691,-1553" />
+                <polygon class="r3" points="0,0 -691,-1553 -237,-1683" />
+                <polygon class="r4" points="0,0 -237,-1683 324,-1669" />
+                <polygon class="r1" points="0,0 324,-1669 772,-1515" />
+                <polygon class="r2" points="0,0 772,-1515 1263,-1138" />
+                <polygon class="r4" points="0,0 1263,-1138 1515,-772" />
+                <polygon class="r2" points="0,0 1515,-772 1669,-324" />
+                <polygon class="r3" points="0,0 1669,-324 1700,0" />
+              </g>
+            </svg>
+            <img class="pyx" src="assets/pyx.svg" alt="Pyx, LemmaFold's folded-paper mascot, smiling" width="360" height="360" />
+          </div>
 
-      <div class="card">
-        <p><a href="/privacy">Privacy policy</a></p>
-        <p><a href="/delete-account">Delete your account</a></p>
-        <p><a href="/support">Support</a> · <a href="mailto:support@lemmafold.com">support@lemmafold.com</a></p>
-      </div>
+          <div class="hero-copy">
+            <span class="eyebrow">8 languages · fully offline · no ads</span>
+            <h1>The grammar other apps <em>skip.</em></h1>
+            <p class="lede">
+              The structure of a good textbook, the practice of an app, and stories worth reading.
+              LemmaFold shows you why a word changes shape, then helps you practise until it sticks.
+            </p>
+            <!--
+              Store buttons. When a store listing goes live, turn its <span class="store"> into
+              <a class="store" href="..."> and change "Coming soon to" to "Download on" / "Get it on":
+              Google Play: https://play.google.com/store/apps/details?id=com.lemmafold.app
+              App Store:   https://apps.apple.com/app/id<APP_ID>
+            -->
+            <div class="stores">
+              <span class="store" aria-label="Coming soon to the App Store">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M10.5 18.5h3" /></svg>
+                <span><small>Coming soon to</small><b>App Store</b></span>
+              </span>
+              <span class="store" aria-label="Coming soon to Google Play">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5v17l9-8.5-9-8.5z" /><path d="M5 3.5 17 10l-3 2M5 20.5 17 14l-3-2" /><path d="m17 10 3 1.6c.7.4.7 1 0 1.4L17 14" /></svg>
+                <span><small>Coming soon to</small><b>Google Play</b></span>
+              </span>
+            </div>
+            <p class="fine">For iPhone, iPad and Android. No account needed to start.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section class="band tint" id="languages" aria-labelledby="languages-title">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">Eight languages</span>
+            <h2 id="languages-title">Every course built the same way</h2>
+            <p>No language is locked or costs more. Whatever is free in one course is free in all eight.</p>
+          </div>
+          <ul class="languages">
+            <li>Spanish <span lang="es">Hola</span></li>
+            <li>Portuguese <span lang="pt">Olá</span></li>
+            <li>French <span lang="fr">Bonjour</span></li>
+            <li>Italian <span lang="it">Ciao</span></li>
+            <li>German <span lang="de">Hallo</span></li>
+            <li>Dutch <span lang="nl">Hoi</span></li>
+            <li>Polish <span lang="pl">Cześć</span></li>
+            <li>Ukrainian <span lang="uk">Привіт</span></li>
+          </ul>
+          <p class="small-print">Spanish is taught as it is spoken in Spain, and Portuguese as it is spoken in Portugal.</p>
+        </div>
+      </section>
+
+      <!-- Statement -->
+      <section class="band">
+        <div class="wrap">
+          <p class="statement">
+            Most apps drill phrases and never tell you why a word changes shape.
+            <span>LemmaFold lays out the whole pattern (every conjugation, every case, every
+            ending) and explains when to use it.</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Screenshots -->
+      <section class="gallery" aria-label="Screenshots of the app">
+        <ul class="gallery-track" id="gallery" tabindex="0">
+          <li><img src="assets/screens/01-home.webp" width="540" height="960" loading="lazy" alt="Home screen: always know what to learn next, with your streak, words learned today and progress through the path" /></li>
+          <li><img src="assets/screens/02-grammar.webp" width="540" height="960" loading="lazy" alt="A grammar lesson laid out in full, with a complete conjugation table" /></li>
+          <li><img src="assets/screens/03-stories.webp" width="540" height="960" loading="lazy" alt="A short story built from words you know" /></li>
+          <li><img src="assets/screens/04-practice.webp" width="540" height="960" loading="lazy" alt="A practice question that gets harder as you learn" /></li>
+          <li><img src="assets/screens/05-word.webp" width="540" height="960" loading="lazy" alt="A word page showing every form of the word" /></li>
+          <li><img src="assets/screens/06-level-check.webp" width="540" height="960" loading="lazy" alt="The level check, to start at your level" /></li>
+          <li><img src="assets/screens/07-topics.webp" width="540" height="960" loading="lazy" alt="Topic lessons you choose, beside the main path" /></li>
+          <li><img src="assets/screens/08-languages.webp" width="540" height="960" loading="lazy" alt="The eight languages, offline and ad-free" /></li>
+        </ul>
+        <div class="gallery-nav">
+          <button type="button" data-dir="-1" aria-label="Previous screenshots" aria-controls="gallery">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+          <button type="button" data-dir="1" aria-label="Next screenshots" aria-controls="gallery">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="band" id="features" aria-labelledby="features-title">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">What's inside</span>
+            <h2 id="features-title">Understand a language, not just collect streaks</h2>
+            <p>Follow the path from your first words to full sentences, or go straight to what you need.</p>
+          </div>
+
+          <div class="grid three">
+            <article class="paper folded">
+              <span class="tag grammar">Grammar</span>
+              <h3>Grammar, explained</h3>
+              <ul>
+                <li>Full conjugation tables for the verbs you learn, tense by tense</li>
+                <li>Declension tables for languages with cases, like Polish, Ukrainian and German</li>
+                <li>Verb aspect, genders and articles, taught as real concepts rather than exceptions</li>
+                <li>Example sentences that show each pattern in use</li>
+              </ul>
+            </article>
+
+            <article class="paper folded">
+              <span class="tag stories">Stories</span>
+              <h3>Stories and conversations</h3>
+              <p class="muted">
+                Short stories and everyday conversations built from the words you're learning. Tap any
+                word to see what it means and every form it takes, or listen to any line read aloud.
+                Then practise each story three ways: fill in its missing words, rebuild its lines, then
+                write parts of it from hearing.
+              </p>
+            </article>
+
+            <article class="paper folded">
+              <span class="tag vocabulary">Your level</span>
+              <h3>Start where you are</h3>
+              <p class="muted">
+                A short level check places you on the path, so you don't start again from what you
+                already know. Already know a lesson? Skip it. Not interested in one? Set it aside and
+                bring it back any time.
+              </p>
+            </article>
+
+            <article class="paper folded">
+              <span class="tag">The path</span>
+              <h3>A clear path, and the freedom to leave it</h3>
+              <p class="muted">
+                The app always points to the lesson to do next. Or open Search and jump straight to one
+                verb tense, the genitive case or the words for the kitchen: every lesson, word and story
+                is there. Optional topic lessons have their own tab.
+              </p>
+            </article>
+
+            <article class="paper folded">
+              <span class="tag vocabulary">Memory</span>
+              <h3>Practice that lasts</h3>
+              <p class="muted">
+                Every lesson comes back as you climb the path, a level harder each time, and spaced
+                repetition puts the words due for review first. Producing an answer counts for more than
+                recognising it, so your progress reflects what you can actually do.
+              </p>
+            </article>
+
+            <article class="paper folded">
+              <span class="tag stories">Habit</span>
+              <h3>A little every day</h3>
+              <p class="muted">
+                Home shows the lesson to go on with, your streak and the words you learned today. Guess
+                the word from its meaning, letter by letter. Watch each module climb from Seen to
+                Learned, Practised and Solid.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practice modes -->
+      <section class="band tint" aria-labelledby="modes-title">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">Practice</span>
+            <h2 id="modes-title">Eight ways to practise</h2>
+            <p>Every session mixes them for you, starting gentle and moving to harder ways as a lesson's diamonds fill.</p>
+          </div>
+          <ol class="modes">
+            <li><b>Match the pairs</b><span>Forms and meanings on one board</span></li>
+            <li><b>Pick the right answer</b><span>Classic multiple choice</span></li>
+            <li><b>Sort the piles</b><span>Deal each word onto its gender, number or aspect</span></li>
+            <li><b>Fill the gap</b><span>One word is missing from a sentence</span></li>
+            <li><b>Pick the ending</b><span>Put the right ending on the stem</span></li>
+            <li><b>Build the sentence</b><span>Tap the words into the right order</span></li>
+            <li><b>Spell the word</b><span>Tap its letters in order</span></li>
+            <li><b>Write what you hear</b><span>Listen, then write what you heard</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Meet Pyx -->
+      <section class="band" aria-labelledby="pyx-title">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">Meet Pyx</span>
+            <h2 id="pyx-title">A single sheet of paper, folded into whatever you're doing</h2>
+          </div>
+          <ul class="pyx-row">
+            <li><img src="assets/pyx.svg" alt="" width="72" height="72" /><b>Pyx</b><span>Ready to fold</span></li>
+            <li><img src="assets/pyx/rabbit.png" alt="" width="72" height="72" /><b>Rabbit</b><span>for words</span></li>
+            <li><img src="assets/pyx/crane.png" alt="" width="72" height="72" /><b>Crane</b><span>for grammar</span></li>
+            <li><img src="assets/pyx/boat.png" alt="" width="72" height="72" /><b>Boat</b><span>for stories</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Private -->
+      <section class="band ink" aria-labelledby="private-title">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">Yours, and private</span>
+            <h2 id="private-title">Study on a plane, underground, anywhere</h2>
+            <p>Every lesson, word, story and game is on your device.</p>
+          </div>
+          <div class="points">
+            <div>
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /><path d="m3 3 18 18" /></svg></div>
+              <h3>Works fully offline</h3>
+              <p>No connection needed to learn. Lines are read aloud by your phone's own voice.</p>
+            </div>
+            <div>
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0" /></svg></div>
+              <h3>Account optional</h3>
+              <p>Start without one. Sign in only if you want your progress and streak synced across devices.</p>
+            </div>
+            <div>
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" /></svg></div>
+              <h3>Hosted in the EU</h3>
+              <p>Sign-in, sync and crash reports run on servers in Frankfurt, Germany.</p>
+            </div>
+            <div>
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="m5.7 5.7 12.6 12.6" /></svg></div>
+              <h3>No ads, no trackers</h3>
+              <p>No advertising, no analytics, and we never sell your data. <a href="/privacy">Read the privacy policy</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Premium -->
+      <section class="band" id="premium" aria-labelledby="premium-title">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">Plans</span>
+            <h2 id="premium-title">Start learning, go further with Premium</h2>
+            <p>Reading is never limited. Premium is about pace, topics and extras, never a different language.</p>
+          </div>
+
+          <div class="plans">
+            <article class="paper plan">
+              <span class="tag">Without a subscription</span>
+              <h3>Free</h3>
+              <p class="price">€0</p>
+              <ul>
+                <li>All eight languages, the same in every one</li>
+                <li>The whole first module and every pronunciation lesson, with no limit</li>
+                <li>Read every lesson, word page, story and conversation</li>
+                <li>20 drops of ink a day for practice after the first module</li>
+                <li>One word a day in the word game</li>
+                <li>Streaks, freezes, achievements and sync</li>
+              </ul>
+            </article>
+
+            <article class="paper plan premium folded">
+              <span class="tag">LemmaFold Premium</span>
+              <h3>Premium</h3>
+              <p class="price">€9.99 <small>/ month</small></p>
+              <p class="trial">Includes a 7-day free trial for new subscribers.</p>
+              <ul>
+                <li>Everything in Free</li>
+                <li>Unlimited practice: no ink</li>
+                <li>Practise every topic lesson and its stories</li>
+                <li>The word game as often as you like</li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="small-print">
+            Price includes VAT; the store shows the price for your country before you buy. Premium is
+            billed by Apple or Google and renews every month until you cancel, which you can do at
+            any time in your store's subscription settings. See the <a href="/terms#subscriptions">terms of use</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="band tint cta">
+        <div class="wrap">
+          <img class="pyx" src="assets/pyx.svg" alt="" width="120" height="120" />
+          <h2>Start with your first words today</h2>
+          <p>For learners who want to understand a language.</p>
+          <div class="stores">
+            <span class="store" aria-label="Coming soon to the App Store">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M10.5 18.5h3" /></svg>
+              <span><small>Coming soon to</small><b>App Store</b></span>
+            </span>
+            <span class="store" aria-label="Coming soon to Google Play">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5v17l9-8.5-9-8.5z" /><path d="M5 3.5 17 10l-3 2M5 20.5 17 14l-3-2" /><path d="m17 10 3 1.6c.7.4.7 1 0 1.4L17 14" /></svg>
+              <span><small>Coming soon to</small><b>Google Play</b></span>
+            </span>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>© LemmaFold</footer>
+    <footer class="site">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand wordmark" href="/"><img src="assets/pyx.svg" alt="" width="32" height="32" /><span>Lemma<span class="fold">Fold</span></span></a>
+            <p>The grammar other apps skip. Eight languages, fully offline, no ads.</p>
+          </div>
+          <nav aria-labelledby="f-app">
+            <h2 id="f-app">App</h2>
+            <ul>
+              <li><a href="/#features">Features</a></li>
+              <li><a href="/#languages">Languages</a></li>
+              <li><a href="/#premium">Premium</a></li>
+            </ul>
+          </nav>
+          <nav aria-labelledby="f-help">
+            <h2 id="f-help">Help</h2>
+            <ul>
+              <li><a href="/support">Support</a></li>
+              <li><a href="/delete-account">Delete your account</a></li>
+              <li><a href="mailto:support@lemmafold.com">support@lemmafold.com</a></li>
+            </ul>
+          </nav>
+          <nav aria-labelledby="f-legal">
+            <h2 id="f-legal">Legal</h2>
+            <ul>
+              <li><a href="/privacy">Privacy policy</a></li>
+              <li><a href="/terms">Terms of use</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 LemmaFold · KVK 88506436 · The Netherlands</span>
+          <span>Made with paper and patience.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var header = document.querySelector('header.site');
+        var onScroll = function () {
+          header.classList.toggle('scrolled', window.scrollY > 8);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        var track = document.getElementById('gallery');
+        var buttons = document.querySelectorAll('.gallery-nav button');
+        var update = function () {
+          var max = track.scrollWidth - track.clientWidth - 2;
+          buttons[0].disabled = track.scrollLeft <= 2;
+          buttons[1].disabled = track.scrollLeft >= max;
+        };
+        buttons.forEach(function (b) {
+          b.addEventListener('click', function () {
+            var step = track.clientWidth * 0.8 * Number(b.dataset.dir);
+            track.scrollBy({ left: step, behavior: 'smooth' });
+          });
+        });
+        track.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        update();
+      })();
+    </script>
   </body>
 </html>
