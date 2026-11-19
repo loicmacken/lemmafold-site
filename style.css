@@ -91,39 +91,49 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Surfaces - lamplit paper */
+    /*
+     * Surfaces - lamplit paper. Each fold laid over the page is a step
+     * lighter than what it lies on; the inset well is the one step down.
+     */
     --page: #1a120d;
-    --card: #261a13;
-    --muted: #2e2018;
-    --muted-strong: #402e22;
-    --inset: #261a13;
+    --card: #281d15;
+    --muted: #34261c;
+    --muted-strong: #4a3729;
+    --inset: #201711;
+    /*
+     * The one token that leaves the app: there --inverse turns to warm paper
+     * for small toasts, but here it fills a whole band, which stays ink.
+     */
     --inverse: #0f0a07;
-    --on-inverse: #fdf9f4;
+    --on-inverse: #f6eee4;
     --on-inverse-muted: #c6b09d;
 
-    --border: #402e22;
-    --border-emphasis: #5c4432;
+    --border: #4c382a;
+    --border-emphasis: #6a503c;
 
-    --fg: #fdf9f4;
-    --fg-body: #f5ebe0;
-    --fg-secondary: #e2d2c3;
-    --fg-muted: #b09683;
+    /* Warm, and a shade below white so it does not bloom */
+    --fg: #f6eee4;
+    --fg-body: #ece1d4;
+    --fg-secondary: #decebe;
+    --fg-muted: #b29986;
 
+    /* The fills stay lamplit orange, so what is written on them is ink, not white. */
     --accent: #ea580c;
     --accent-pressed: #c2410c;
     --accent-fg: #fb923c;
-    --accent-muted: #382114;
-    --accent-border: #58301a;
+    --accent-muted: #482817;
+    --accent-border: #743e1f;
     --brand: #f97316;
+    --on-accent: #1c1008;
 
     --success-fg: #a6ce6e;
-    --success-subtle: #1f2614;
-    --success-border: #6e9c3a;
+    --success-subtle: #28331a;
+    --success-border: #7eb042;
     --danger-fg: #e88a76;
-    --danger-subtle: #2e1813;
-    --danger-border: #c45842;
+    --danger-subtle: #3e1f18;
+    --danger-border: #b64c38;
     --warning-subtle: #30210c;
-    --warning-border: #a16207;
+    --warning-border: #b0700e;
     --warning-fg: #f5b433;
 
     --cat-vocabulary: #5eb8b2;

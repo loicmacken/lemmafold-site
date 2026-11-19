@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="canonical" href="https://lemmafold.com/privacy" />
     <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="style.css?v=3" />
+    <link rel="stylesheet" href="style.css?v=4" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -33,7 +33,7 @@
 
     <main id="main" class="doc">
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated 14 September 2026</p>
+      <p class="muted">Last updated 19 November 2026</p>
 
       <div class="card">
         <p><strong>The short version</strong></p>
@@ -41,6 +41,7 @@
           <li>You can use all of LemmaFold without an account. Your progress then never leaves your device.</li>
           <li>If you create an account, we store your email address and your progress so it can sync between your devices.</li>
           <li>If the app crashes, an anonymous crash report is sent so we can fix the bug.</li>
+          <li>If you send feedback from the app, we receive what you write and some technical details, never your email address or progress.</li>
           <li>No ads, no analytics, no tracking, and we never sell your data.</li>
         </ul>
       </div>
@@ -57,7 +58,8 @@
       <h3>If you don't create an account</h3>
       <p>
         Lessons and your progress are stored only in a database on your device. We don't receive
-        them. The only thing that can leave your device is a crash report (see below).
+        them. The only things that can leave your device are crash reports and feedback you choose
+        to send (see below).
       </p>
 
       <h3>If you create an account</h3>
@@ -78,6 +80,35 @@
         When the app crashes or hits an error, it sends a report with technical details: device
         model, operating system and app version, and where in the code the error happened. Reports
         do not include your email address or your progress, and are not linked to your account.
+      </p>
+
+      <h3>Feedback you send from the app</h3>
+      <p>
+        Only when you use <strong>Send feedback</strong> in the app, or the flag on a question,
+        lesson page, story or game, we receive:
+      </p>
+      <ul>
+        <li>what you write and the category you pick;</li>
+        <li>
+          for a report from the flag, what it was about: the question, page, story or game (the
+          course's own text) and, for a question, the answer you gave;
+        </li>
+        <li>
+          diagnostics: app version and build, platform, operating system version and device
+          model, the language you are learning, the screen you sent it from, whether you are
+          signed in and when you last synced, your device's locale and time-zone offset, and a
+          random id made by the app on your device.
+        </li>
+      </ul>
+      <p>
+        Feedback never includes your email address, your account id or your progress. It is
+        stored as an issue in a private GitHub repository that only the developer can read. When
+        a report leads to a change, its text and diagnostics may be given to an AI coding
+        assistant (Anthropic's Claude) that helps write the fix.
+      </p>
+      <p>
+        To limit abuse of the feedback form, we keep a one-way keyed hash of your IP address
+        (never the address itself) for 24 hours.
       </p>
 
       <h3>Emails you send us</h3>
@@ -116,6 +147,16 @@
               <td>Legitimate interest in a working app (art. 6(1)(f))</td>
             </tr>
             <tr>
+              <td>Fixing what you report and improving the course</td>
+              <td>Feedback from the app and its diagnostics</td>
+              <td>Legitimate interest in a working app and correct lessons (art. 6(1)(f))</td>
+            </tr>
+            <tr>
+              <td>Preventing abuse of the feedback form</td>
+              <td>Keyed hash of your IP address</td>
+              <td>Legitimate interest (art. 6(1)(f))</td>
+            </tr>
+            <tr>
               <td>Answering your questions</td>
               <td>Your emails</td>
               <td>Legitimate interest (art. 6(1)(f))</td>
@@ -146,6 +187,14 @@
               <td>30 days, then deleted automatically</td>
             </tr>
             <tr>
+              <td>Feedback from the app</td>
+              <td>Until 90 days after the issue it opened is closed, then deleted</td>
+            </tr>
+            <tr>
+              <td>Keyed hash of your IP address</td>
+              <td>24 hours</td>
+            </tr>
+            <tr>
               <td>Server logs at our hosting provider</td>
               <td>At most 7 days</td>
             </tr>
@@ -162,7 +211,11 @@
       </div>
 
       <h2>Who processes it</h2>
-      <p>We use these service providers, bound by data processing agreements:</p>
+      <p>
+        We use these service providers. Supabase and Sentry are bound by data processing
+        agreements and keep your data in the EU. GitHub and Anthropic only ever receive feedback
+        you choose to send, which carries no email address, account id or progress.
+      </p>
       <div class="table-wrap">
         <table>
           <thead>
@@ -176,7 +229,7 @@
           <tbody>
             <tr>
               <td>Supabase</td>
-              <td>Account sign-in and progress sync</td>
+              <td>Account sign-in, progress sync and receiving feedback</td>
               <td>Frankfurt, Germany (EU)</td>
               <td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td>
             </tr>
@@ -185,6 +238,18 @@
               <td>Crash reports</td>
               <td>Frankfurt, Germany (EU)</td>
               <td><a href="https://sentry.io/privacy/">sentry.io/privacy</a></td>
+            </tr>
+            <tr>
+              <td>GitHub</td>
+              <td>Storing feedback you send</td>
+              <td>United States</td>
+              <td><a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a></td>
+            </tr>
+            <tr>
+              <td>Anthropic</td>
+              <td>Helping write fixes from feedback</td>
+              <td>United States</td>
+              <td><a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a></td>
             </tr>
           </tbody>
         </table>
@@ -195,8 +260,11 @@
         independent controllers.
       </p>
       <p>
-        Where a provider or its sub-processors handle data outside the European Economic Area,
-        the transfer is protected by the European Commission's Standard Contractual Clauses.
+        Where Supabase's or Sentry's sub-processors handle data outside the European Economic
+        Area, the transfer is protected by the European Commission's Standard Contractual
+        Clauses. Feedback you send is stored by GitHub, and may be read by Anthropic, in the
+        United States. Please don't include personal details, such as your name or email
+        address, in feedback.
       </p>
 
       <h2>How we protect it</h2>
